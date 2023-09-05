@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     dispatch(__getTodos());
-  }, []);
+  }, [dispatch]);
 
   if (isLoading) {
     return <div>로딩 중...</div>;
